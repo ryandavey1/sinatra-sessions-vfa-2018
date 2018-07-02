@@ -1,3 +1,4 @@
+
 require_relative 'config/environment'
 
 class App < Sinatra::Base
@@ -33,7 +34,7 @@ class App < Sinatra::Base
   end
 
   get '/second_exercise' do
-    "Your second lesson will be to set your session :id key to a value.\nIn the route: /set_session, write a line of code that sets the session[:id] equal to 1.\nThen, navigate to the '/set_session' path"
+    "Your second lesson will be to set your session :user_id key to a value.\nIn the route: /set_session, write a line of code that sets the session[:user_id] equal to 1.\nThen, navigate to the '/set_session' path"
   end
 
   get '/set_session' do
@@ -48,7 +49,7 @@ class App < Sinatra::Base
   end
 
   get '/fetch_session_id' do
-    "You did it! session[:id] value: #{session[:id]}.\nNow, clear the session in the '/logout' route.\nSee the readme for further instructions.\nThen, navigate to the '/logout' path."
+    "You did it! session[:user_id] value: #{session[:user_id]}.\nNow, clear the session in the '/logout' route.\nSee the readme for further instructions.\nThen, navigate to the '/logout' path."
   end
 
   get '/logout' do
